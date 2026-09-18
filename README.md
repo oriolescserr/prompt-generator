@@ -1,8 +1,8 @@
 # Prompt Generator
 
-A Cursor workspace for writing prompts that actually fit the model you will run them on.
+A Cursor workspace to structure ideas you already have into prompts that fit the model you will run them on.
 
-This is not an app and not a catalog of every model version. Open the folder in Cursor, describe the job, and the agent acts as a **prompt specialist**: it asks what it needs, uses durable lab patterns, then checks official docs for the **exact model you named**.
+Say what you want in natural language. The agent turns that into a clear, ready-to-paste prompt, following the **official prompting guides** for the exact model you named. This is not an app and not a catalog of every model version.
 
 ## How it works
 
