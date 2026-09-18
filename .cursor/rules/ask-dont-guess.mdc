@@ -1,0 +1,24 @@
+---
+description: Ask the user instead of assuming model, reasoning, task details, or project path.
+alwaysApply: true
+---
+
+# Ask. Do not guess.
+
+Before writing a prompt, you must know:
+
+- **Which model** will run it
+- **How much reasoning / effort** (or that they want the default)
+- **What the prompt is about** and what the model should do
+- **Whether a project on this computer is involved**, and **where it is**
+
+If any of those are missing or fuzzy, ask a short question. Same for constraints, output format, tools, tone, or audience if they would change the prompt.
+
+```text
+❌ BAD
+Assume Claude, high effort, and that they mean this repo.
+
+✅ GOOD
+"Which model should this prompt run on, and how much reasoning?
+Is this for a project on this computer? If yes, what is the path?"
+```

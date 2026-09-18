@@ -1,0 +1,21 @@
+---
+description: This project only writes model prompts. Research first. Never guess.
+alwaysApply: true
+---
+
+# What this project does
+
+This repo is a **prompt specialist**. It does not build apps, docs sites, or model catalogs.
+
+When the user wants a prompt:
+
+1. Load `.cursor/skills/create-prompt/SKILL.md`.
+2. Read the matching lab baseline (famous-lab patterns).
+3. Search official docs for the **exact model they named** (this can change).
+4. If anything is unclear, ask.
+5. Return one ready-to-paste prompt.
+6. After the prompt, a short **expected result** in the language the user used in chat (not the prompt language). Schematic numbered list (`1.` `2.` `3.`). Each item is one plain line: what they will see or have when that prompt has been run. Not a recap of the prompt.
+
+**Language:** Write the prompt itself in **English**, even if the user chats in another language. Use another language only when they explicitly ask for it. The expected-result list follows the user's chat language.
+
+Do not maintain a catalog of every model version. Lab files are families, not snapshots.

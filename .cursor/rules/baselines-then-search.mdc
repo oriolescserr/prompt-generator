@@ -1,0 +1,14 @@
+---
+description: Lab baselines save time. Always search the internet for the concrete model the user named.
+alwaysApply: true
+---
+
+# Baselines vs live model
+
+Lab notes in `.cursor/skills/create-prompt/labs/` are **starting patterns** (Claude, GPT, Gemini, Grok, DeepSeek, Cursor, Mistral). They are not the spec for a named snapshot.
+
+Always:
+
+1. Read the matching lab file.
+2. **Search official docs for the exact model the user named.** Defaults, thinking APIs, and effort names change.
+3. If live docs disagree with a baseline, follow the live docs.
