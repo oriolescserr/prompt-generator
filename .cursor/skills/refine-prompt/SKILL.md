@@ -26,4 +26,5 @@ Then sync that host's file in `.host-plugins/` the same way as [create-prompt](.
 - What you changed and why (from the docs, not vibes)
 - The revised copyable prompt (**English** unless the user asked for another language)
 - Effort / thinking setting to use
+- After the prompt, before the expected result, every plugin or skill the prompt tells the model to use. One short line each: the id, and why this prompt names it. If it names none, say none. Same language as the expected result.
 - A short **expected result** in the language the user used in this chat. Schematic numbered list (`1.` `2.` `3.`). Each item is one plain line: what they will see or have after that prompt is run. Not a recap of the prompt.
