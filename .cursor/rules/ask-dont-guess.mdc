@@ -9,6 +9,7 @@ Before writing a prompt, you must know:
 
 - **Which model** will run it
 - **How much reasoning / effort** (or that they want the default)
+- **Where it will run** (Claude Code, Cursor, Codex, or a chat with no plugins)
 - **What the prompt is about** and what the model should do
 - **Whether a project on this computer is involved**, and **where it is**
 
@@ -19,6 +20,6 @@ If any of those are missing or fuzzy, ask a short question. Same for constraints
 Assume Claude, high effort, and that they mean this repo.
 
 ✅ GOOD
-"Which model should this prompt run on, and how much reasoning?
+"Which model should this prompt run on, how much reasoning, and where will you paste it?
 Is this for a project on this computer? If yes, what is the path?"
 ```

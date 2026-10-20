@@ -6,10 +6,11 @@ Say what you want in natural language. The agent turns that into a clear, ready-
 
 ## How it works
 
-1. **Ask**: model, reasoning/effort, what the prompt should do, and whether a project on this computer is involved (and its path).
+1. **Ask**: model, reasoning/effort, where the prompt will run, what it should do, and whether a project on this computer is involved (and its path).
 2. **Baseline**: read a short lab note for that family (Claude, GPT, Gemini, Grok, DeepSeek, Cursor, Mistral) so the draft is not starting from zero.
 3. **Search**: look up current official prompting, thinking, and effort docs for the named snapshot. Lab notes lose to live docs.
-4. **Write**: one copyable prompt in **English** (unless you ask for another language), plus where to paste it and which reasoning setting to use.
+4. **Plugins**: compare the enabled plugins of that host (global and the target project) with its own file in `.host-plugins/` (`claude-code.md`, `codex.md`, `cursor.md`). The folder is gitignored. If the file is missing, it is created. New plugins a prompt might name are read once and noted (what they do, when to name them). A plugin that is only for the person using the host, such as an image preview, is listed by name at the end of the file. Removed plugins are deleted. A plugin already noted is not read again.
+5. **Write**: one copyable prompt in **English** (unless you ask for another language), plus where to paste it and which reasoning setting to use.
 
 If anything about the task would change the prompt, the agent asks instead of guessing.
 
@@ -44,6 +45,8 @@ You will be asked for the target model and effort if you omit them. If the work 
     SKILL.md
     labs/                    # family patterns (not version lists)
   refine-prompt/             # rewrite an existing prompt
+
+.host-plugins/               # local plugin notes, gitignored, one file per host
 ```
 
 ### Lab baselines
