@@ -30,6 +30,7 @@ You will be asked for the target model and effort if you omit them. If the work 
 - Official pages used **in that session**
 - A single prompt to paste
 - How to set thinking / reasoning in the product or API
+- The plugins that prompt names, or a one-line reason when it names none
 - A short numbered expected result in the language you used in chat (what you should have once that prompt has been run)
 
 ## Repository layout

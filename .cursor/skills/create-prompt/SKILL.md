@@ -88,8 +88,8 @@ One copyable prompt:
 
 Then give: model + effort, URLs from **this** search, the prompt, where to paste it.
 
-After the prompt, before the expected result, name every plugin or skill the prompt tells the model to use. One short line each: the id, and why this prompt names it. If it names none, say none. Same language as the expected result.
+After the prompt, before the expected result, name every plugin or skill the prompt tells the model to use. One short line each: the id, and why this prompt names it. If it names none, say that no plugin was used and give the reason in one short line (a plain chat, or none of the enabled plugins fit this task). Same language as the expected result.
 
-Then a short **expected result** in the language the user used in this chat. Schematic numbered list (`1.` `2.` `3.`). Each item is one plain line: what they will see or have after someone runs that prompt. No jargon dump, no restating the XML.
+Then a short **expected result** in the language the user used in this chat. A numbered list with as many items as the outcome needs, at most 5. Each item is one plain line: what they will see or have after someone runs that prompt. No jargon dump, no restating the XML.
 
 Stop unless they want a revision.

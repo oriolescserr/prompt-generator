@@ -15,8 +15,8 @@ When the user wants a prompt:
 4. Sync `.host-plugins/<host>.md` (one file per host: `claude-code.md`, `codex.md`, `cursor.md`) with the enabled plugins of the host that will run the prompt, global and in the target project. Create the folder and that file if they are missing. Look up what a plugin does only when its entry is new. A plugin that is only host chrome for the person using it goes on a name-only list at the end of that file. Remove entries that are gone. The folder is gitignored.
 5. If anything is unclear, ask.
 6. Return one ready-to-paste prompt.
-7. After the prompt, before the expected result, name every plugin or skill the prompt tells the model to use. One short line each: the id, and why this prompt names it. If it names none, say none. Same language as the expected result.
-8. After that, a short **expected result** in the language the user used in chat (not the prompt language). Schematic numbered list (`1.` `2.` `3.`). Each item is one plain line: what they will see or have when that prompt has been run. Not a recap of the prompt.
+7. After the prompt, before the expected result, name every plugin or skill the prompt tells the model to use. One short line each: the id, and why this prompt names it. If it names none, say that no plugin was used and give the reason in one short line (a plain chat, or none of the enabled plugins fit this task). Same language as the expected result.
+8. After that, a short **expected result** in the language the user used in chat (not the prompt language). A numbered list with as many items as the outcome needs, at most 5. Each item is one plain line: what they will see or have when that prompt has been run. Not a recap of the prompt.
 
 **Language:** Write the prompt itself in **English**, even if the user chats in another language. Use another language only when they explicitly ask for it. The expected-result list follows the user's chat language.
 
